@@ -1,21 +1,15 @@
 FORMAT: 1A
-HOST: https://polls.apiblueprint.org/
+HOST: https://development-api.hellalit.org:2022/
 
 # Redtie API
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Questions Collection [/questions]
+## Questions Collection [/api/brands/list?limit=300]
 
 ### List All Questions [GET]
 
-+ Request 
-
-    + Headers
-    
-            api-key: 1234
-
-+ Response 200 (application/json)
++ Response 200
 
         [
             {
@@ -31,10 +25,7 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                     }, {
                         "choice": "Objective-C",
                         "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
+                    },
                 ]
             }
         ]
